@@ -19,7 +19,7 @@ func (s intSlice) Less(i, j int) bool {
 var ints = [...]int{74, 59, 238, -784, 9845, 959, 905, 0, 0, 42, 7586, -5467984, 7586}
 
 func generateRandomSlice() []int {
-	s := make([]int, 1<<14)
+	s := make([]int, 1<<17)
 	for i := range s {
 		s[i] = rand.Intn(1 << 32)
 	}
